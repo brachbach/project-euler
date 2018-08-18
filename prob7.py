@@ -18,8 +18,8 @@ def find_nth_prime(n):
             num_to_check += 2
         else:
             num_to_check += 4
-    return primes_so_far[-1]
+    return primes_so_far[n - 1]
 
-print(find_nth_prime(10001))
+print(find_nth_prime(1))
         
             

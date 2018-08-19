@@ -13,7 +13,7 @@ def find_ab():
     # c must be greater than either a or b
     for a in range(1,500):
         # math.sqrt(300**2 * 2) > 400
-        for b in range(1,300):
+        for b in range(1, min(a + 1, 300)):
             if 1000 - a - b == math.sqrt(a**2 + b**2):
                 return a, b
 

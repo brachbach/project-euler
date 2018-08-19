@@ -11,7 +11,8 @@ import math
 
 def find_ab():
     # c must be greater than either a or b
-    for a in range(1,500):
+    # math.sqrt(250**2 * 2) < 500
+    for a in range(250,500):
         # math.sqrt(300**2 * 2) > 400
         for b in range(1, min(a + 1, 300)):
             if 1000 - a - b == math.sqrt(a**2 + b**2):

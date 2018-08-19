@@ -7,9 +7,13 @@ import math
 
 # 1000 - a - b = sqrt(a^2 + b^2)
 
+# still want to think about ways to optimize more
+
 def find_ab():
-    for a in range(1,1000):
-        for b in range(1,1000):
+    # c must be greater than either a or b
+    for a in range(1,500):
+        # math.sqrt(300**2 * 2) > 400
+        for b in range(1,300):
             if 1000 - a - b == math.sqrt(a**2 + b**2):
                 return a, b
 

@@ -1,0 +1,176 @@
+/* setup */
+/* base */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 100%; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+body {
+  background-color: #FFF;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%; }
+
+.hide {
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important; }
+
+#banner {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  border: solid 1px #000;
+  overflow: hidden;
+  background-color: #000;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+  #banner .bannerClick {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"); }
+
+@font-face {
+  font-family: 'Booking Sans';
+  src: url("../fonts/BookingSans.woff2") format("woff2"), url("../fonts/BookingSans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+/* Banner Styles */
+div, img {
+  position: absolute; }
+
+#background {
+  width: 300px;
+  height: 250px;
+  background-color: #003580; }
+  #background #backgroundGradient {
+    width: 300px;
+    height: 300px;
+    top: -150px;
+    left: 20px;
+    opacity: 0.8;
+    background: #009fe3;
+    background: radial-gradient(ellipse at center, #009fe3 0%, #003580 70%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009fe3', endColorstr='#003580',GradientType=1 ); }
+
+.imagesWrapper1 {
+  bottom: -251px; }
+
+.imagesWrapper1_fade {
+  left: 89px;
+  top: -1px; }
+  .imagesWrapper1_fade img {
+    opacity: 0; }
+
+.imagesWrapper2 {
+  top: -1px;
+  left: 89px; }
+
+.imagesWrapper2_fade {
+  top: 83px;
+  left: 0px; }
+  .imagesWrapper2_fade img {
+    opacity: 0; }
+
+.imagesWrapper3_fade {
+  top: 167px;
+  left: 89px; }
+  .imagesWrapper3_fade img {
+    opacity: 0; }
+
+.images {
+  will-change: transform;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  display: block;
+  position: relative;
+  border-top: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+  width: 88px;
+  height: 83px; }
+
+#copyContainer {
+  width: 120px;
+  height: 250px;
+  left: 178px;
+  top: 0; }
+  #copyContainer #logo {
+    position: relative;
+    width: 96px;
+    height: 16px;
+    top: 41px;
+    left: 14px; }
+  #copyContainer #copyWrapper {
+    font-family: 'Booking Sans';
+    width: 100%;
+    height: 110px;
+    color: #FFFFFF;
+    font-size: 14px;
+    top: 70px; }
+    #copyContainer #copyWrapper .copy1 {
+      line-height: 16px;
+      text-align: center;
+      width: 100px;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      left: 50%;
+      top: 50%;
+      will-change: transform; }
+    #copyContainer #copyWrapper .copy2 {
+      line-height: 16px;
+      text-align: center;
+      width: 100px;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      left: 50%;
+      top: 50%;
+      will-change: transform; }
+  #copyContainer #cta {
+    position: relative;
+    width: 96px;
+    height: 36px;
+    border: 2px solid #ffffff;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    top: 172px;
+    left: 14px;
+    background: #009fe3;
+    background: -webkit-gradient(linear, left top, left bottom, from(#009fe3), to(#004791));
+    background: linear-gradient(to bottom, #009fe3 0%, #004791 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009fe3', endColorstr='#004791',GradientType=0 );
+    will-change: transform; }
+    #copyContainer #cta .ctaCopy {
+      position: relative;
+      font-family: 'Booking Sans';
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 14px;
+      line-height: 32px;
+      will-change: transform; }
+
+.guide {
+  position: absolute;
+  top: 0;
+  opacity: 0.2; }
